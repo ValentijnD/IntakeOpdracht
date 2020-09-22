@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+    html, body {
+        margin: 30px;
+    }
+    </style>
+<!-- ------------------------ OPDRACHT 1 ---------------------------- -->
+
+    <form>
+	    <label>Bereken</label>
+        <select id="selection">
+            <option value="toDollar">Euro naar Dollar</option>
+            <option value="toEuro">Dollar naar Euro</option>
+        </select>
+        
+	    <label>Van</label>
+        <input type="text" id="van"></input>
+	    <label>Naar</label>
+        <input type="text" id="naar" disabled></input>
+        <button type="button" onclick="bereken()">Berekenen</button>
+    </form>
+
+<!-- ------------------------ OPDRACHT 2 ---------------------------- -->
+
+    <form style="margin-top:20px; margin-bottom: 20px">
+        <input type="text" id="number"></input>
+        <button type="button" onclick="vertaal()">Vertaal</button>
+        <p id="translation"></p>
+    </form>
+
+<!-- ------------------------ OPDRACHT 3 ---------------------------- -->
+    <form >
+        <button type="button" onclick="date()">Hoe laat is het?</button>
+        <p id="time"></p>
+    </form>
+
+
+</body>
+</html>
